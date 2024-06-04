@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="ts/ejercicio1.ts"></script>
+    <title>Inicio</title>
+</head>
+<body>
+    <nav id="menu" class="navbar navbar-expand-lg bg-success navbar-dark ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">FullStack DEV.</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse text-center" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav text-uppercase">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="promedio-1.html">Promedio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="area-triangulo-2.html">Área de un Triángulo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="par-impar-3.html">Par o Impar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mayor-y-menor-4.html">Mayor o Menor</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="elevar-numero-5.html">Elevar Número</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="inversa-texto-6.html">Inversa de un Texto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="factorial-7.html">Número Factorial</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="num-perfecto-8.html">Número Perfecto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="num-primo-9.html">Número Primo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contar-vocales-10.html">Contar Vocales</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <main class="container-fluid">
+        <div id="container-form">
+            <form action="#">
+                <h1>Calcular el Área de un Triángulo</h1>
+                <hr>
+                <label for="">Cateto a</label>
+                <input id="num1" type="number">
+
+                <label for="">Cateto b</label>
+                <input id="txt_num2" type="number">
+
+                <label for="">Hipotenusa</label>
+                <input id="txt_num3" type="number">
+
+                <input type="submit" onclick="calcularArea();"  value="Calcular el Área" >
+                
+                <div id="txt_result">
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

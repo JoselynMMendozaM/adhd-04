@@ -1,0 +1,18 @@
+
+
+main{
+padding: 20px;
+padding-bottom: 50px;
+}
+
+#container-form{
+    width: 350px;
+    background-attachment: fixed;    
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 40px;
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(255, 255, 255, 2);
+    box-shadow: 0 0 10px  rgba(0, 0, 0, .2);
+}

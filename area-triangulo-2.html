@@ -59,21 +59,13 @@
     <main class="container-fluid">
         <div id="container-form">
             <form action="#">
-                <h1>Calcular el Área de un Triángulo</h1>
-                <hr>
-                <label for="">Cateto a</label>
-                <input id="num1" type="number">
+                <h1>Calculadora de área de triángulo</h1>
 
-                <label for="">Cateto b</label>
-                <input id="txt_num2" type="number">
+    <input type="number" id="base" placeholder="Ingrese la base">
+    <input type="number" id="altura" placeholder="Ingrese la altura">
+    <button onclick="calcularArea()">Calcular</button>
 
-                <label for="">Hipotenusa</label>
-                <input id="txt_num3" type="number">
-
-                <input type="submit" onclick="calcularArea();"  value="Calcular el Área" >
-                
-                <div id="txt_result">
-                </div>
+    <p id="resultado"></p>
             </form>
         </div>
     </main>

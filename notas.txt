@@ -76,4 +76,56 @@ tsc typescript/suma.ts
 
 tsc typescript/suma.ts --outDiv  js
 
+// Enlazar elementos de HTML con TypeScript
 
+let inputNumero1 = document.getElementById('txtxNumero1') as HTMLInputElement;
+let inputNumero2 = document.getElementById('txtxNumero2') as HTMLInputElement;
+const btnResta = document.getElementById('btnResta')as HTMLInputElement;
+const btnMult = document.getElementById('btnMult')as HTMLInputElement;
+const btnDiv = document.getElementById('btnDiv')as HTMLInputElement;
+
+// añadir evento a los btn(event, función)
+btnResta.addEventListener('click', resta);
+btnMult.addEventListener('click', multi);
+btnDiv.addEventListener('click', divi);
+
+// Enlazar etiqueta (div) donde se mostrará el resultado
+const resultDiv = document.getElementById('resultado') as HTMLInputElement;
+
+let numero1: number = 0;
+let numero2: number = 0;
+
+
+// Crear métodos para las diversas operaciones
+function recibirValor():number{
+    let respuesta: number = 0;
+    numero1 = parseFloat(inputNumero1.value);
+    numero2 = parseFloat(inputNumero2.value);
+
+    if(isNaN(numero1)||isNaN(numero2)){
+        resultDiv.textContent = "El valor no es un número , no puede hacer la operación"
+        respuesta = 100;
+    }
+    return respuesta;
+}
+function suma(){
+    if (recibirValor()==100){//Llamar a la funcion que recibe valores
+        resultDiv.textContent = "Error en valores"
+
+    }else{
+        const suma =  numero1 + numero2
+        resultDiv.textContent = "La suma es: " + suma;
+    }
+} 
+function resta(){
+    recibirValor(); //Llamar a la funcion que recibe valores
+    const resta =  numero1 - numero2
+    
+    resultDiv.textContent = "La resta es: " + resta;
+}
+function multi(){
+    
+}
+function divi(){
+    
+}

@@ -6,15 +6,69 @@
     <title>Encontrar mayor y menor de tres números</title>
 </head>
 <body>
-    <h1>Encontrar mayor y menor de tres números</h1>
+    <nav id="menu" class="navbar navbar-expand-lg bg-success navbar-dark ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">FullStack DEV.</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse text-center" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav text-uppercase">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="promedio-1.html">Promedio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="area-triangulo-2.html">Área de un Triángulo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="par-impar-3.html">Par o Impar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mayor-y-menor-4.html">Mayor o Menor</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="elevar-numero-5.html">Elevar Número</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="inversa-texto-6.html">Inversa de un Texto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="factorial-7.html">Número Factorial</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="num-perfecto-8.html">Número Perfecto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="num-primo-9.html">Número Primo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contar-vocales-10.html">Contar Vocales</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    
+    <main class="container-fluid">
+        <div id="container-form">
+            <form action="#">
+                    <h1>Encontrar  el número mayor y menor de tres números</h1>
+                    <label for="">Número 1</label>
+                    <input type="number" id="txt_num1" placeholder="Ingrese el primer número">
+                    <label for="">Número 2</label>
+                    <input type="number" id="txt_num2" placeholder="Ingrese el segundo número">
+                    <label for="">Número 3</label>
+                    <input type="number" id="txt_num3" placeholder="Ingrese el tercer número">
+                    <button onclick="encontrarMayorMenor()">Encontrar</button>
+                
+                <div id="txt_result">
 
-    <input type="number" id="num1" placeholder="Ingrese el primer número">
-    <input type="number" id="num2" placeholder="Ingrese el segundo número">
-    <input type="number" id="num3" placeholder="Ingrese el tercer número">
-    <button onclick="encontrarMayorMenor()">Encontrar</button>
-
-    <p id="resultado"></p>
-
-    <script src="script.js"></script>
+                </div>
+            </form>
+        </div>
+    </main>
 </body>
 </html>

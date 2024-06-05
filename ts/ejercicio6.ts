@@ -1,12 +1,18 @@
 function invertirTexto() {
-    const texto: string = document.getElementById('texto').value;
+  const txt1: string = document.getElementById('txt_1')?.textContent || '';
+  const resultDiv = document.getElementById('txt_result') as HTMLDivElement;
+
+  // const txt1: HTMLInputElement = document.getElementById('txt_1') as HTMLInputElement;
+
+
+    
   
-    if (texto.trim() === '') {
+    if (txt1.trim() === '') {
       alert('Ingrese un texto válido.');
       return;
     }
   
-    const textoInvertido: string = texto.split('').reverse().join('');
-    document.getElementById('resultado').textContent = `Texto invertido: ${textoInvertido}`;
+    const textoInvertido: string = txt1.split('').reverse().join('');
+    resultDiv.textContent = `Texto invertido: ${textoInvertido}`;
   }
   

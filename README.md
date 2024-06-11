@@ -1,5 +1,6 @@
 # ACTIVIDAD PARA DESARROLLAR HABILIDADES Y DESTREZAS (ADHD 04)
 
+|                |                         |                      |
 |----------------|-------------------------------|-----------------------------|
 |**Nombre**   |Joselyn Michelle Mendoza Molina`                     |
 |**Carné**         |`2020-030618                     |

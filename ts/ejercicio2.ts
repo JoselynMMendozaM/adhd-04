@@ -1,15 +1,16 @@
-function calcularArea() {
-  const base: number = parseFloat((document.getElementById('txt_base') as HTMLInputElement).value);
-  const altura: number = parseFloat((document.getElementById('txt_atura') as HTMLInputElement).value);
-  const resultDiv = document.getElementById('txt_result') as HTMLDivElement;
+function calcularArea(): void{
+    const numero1: number = parseFloat(
+        (document.getElementById('txtNumero1') as HTMLInputElement).value);
+    const numero2: number = parseFloat(
+        (document.getElementById('txtNumero2') as HTMLInputElement).value);
+  
+      if (isNaN(numero1) || isNaN(numero2)) {
+        alert('Ingrese valores numéricos válidos para los dos números.');
+        return;
+      }
 
-  
-    if (isNaN(base) || isNaN(altura)) {
-      alert('Ingrese valores numéricos válidos para la base y la altura.');
-      return;
-    }
-  
-    const area: number = (base * altura) / 2;
-    resultDiv.textContent = `El área es de: ${area.toFixed(2)}`;
-  }
-  
+    const area: number = (numero1 * numero2) / 2 ;
+    
+    document.getElementById('resultado').innerHTML =
+     "El área del triangulo es de: " + area; 
+} 

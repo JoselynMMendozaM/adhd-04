@@ -1,16 +1,18 @@
-function elevarPotencia() {
-  const base: number = parseFloat((document.getElementById('txt_base') as HTMLInputElement).value);
-  const exp: number = parseFloat((document.getElementById('txt_exp') as HTMLInputElement).value);
-  const resultDiv = document.getElementById('txt_result') as HTMLDivElement;
-
-    
+function elevarPotencia(): void{
+    const base: number = parseFloat(
+        (document.getElementById('txtBase') as HTMLInputElement).value);
+    const exp: number = parseFloat(
+        (document.getElementById('txtExponente') as HTMLInputElement).value);
+   
+  
     if (isNaN(base) || isNaN(exp)) {
-      alert('Ingrese valores numéricos válidos para la base y el exponente.');
-      return;
+        alert('Ingrese valores numéricos válidos para los tres números.');
+        return;
     }
   
     const potencia: number = Math.pow(base, exp);
-    resultDiv.textContent = `El resultado de elevar ${base} a la potencia ${exp} es: ${potencia}`;
-
-  }
-  
+    
+    document.getElementById('resultado').innerHTML =
+     `El resultado de elevar ${base} a la potencia ${exp} es: ${potencia}`; 
+}  
+    

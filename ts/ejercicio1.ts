@@ -1,20 +1,21 @@
-function calculandoPromedio() {
-    const num1: number = parseFloat((document.getElementById('txt_num1') as HTMLInputElement).value);
-    const num2: number = parseFloat((document.getElementById('txt_num2') as HTMLInputElement).value);
-    const num3: number = parseFloat((document.getElementById('txt_num3') as HTMLInputElement).value);
-    const resultDiv = document.getElementById('txt_result') as HTMLDivElement;
+function calcularPromedio(): void{
+  const numero1: number = parseFloat(
+      (document.getElementById('txtNumero1') as HTMLInputElement).value);
+  const numero2: number = parseFloat(
+      (document.getElementById('txtNumero2') as HTMLInputElement).value);
+  const numero3: number = parseFloat(
+      (document.getElementById('txtNumero3') as HTMLInputElement).value);
 
-    if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
+  if (isNaN(numero1) || isNaN(numero2) || isNaN(numero3)) {
       alert('Ingrese valores numéricos válidos para los tres números.');
       return;
-    }
+  }
+
+  const promedio: number = (numero1 + numero2+ numero3) / 3 ;
   
-    const promedio: number = (num1 + num2 + num3) / 3;
-    
-    resultDiv.textContent = `El promedio es: ${promedio.toFixed(2)}`;
-}
-  
-  
+  document.getElementById('resultado').innerHTML =
+   "El promedio es de: " + promedio; 
+}  
   
   
   

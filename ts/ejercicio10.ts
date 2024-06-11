@@ -1,5 +1,5 @@
 function contarVocales() {
-    const texto: string = document.getElementById('texto').value.toLowerCase();
+    const texto: string = document.getElementById('txt1').toLowerCase();
   
     if (texto.trim() === '') {
       alert('Ingrese un texto válido.');

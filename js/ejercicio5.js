@@ -1,11 +1,11 @@
 function elevarPotencia() {
-    var base = parseFloat(document.getElementById('txt_base').value);
-    var exp = parseFloat(document.getElementById('txt_exp').value);
-    var resultDiv = document.getElementById('txt_result');
+    var base = parseFloat(document.getElementById('txtBase').value);
+    var exp = parseFloat(document.getElementById('txtExponente').value);
     if (isNaN(base) || isNaN(exp)) {
-        alert('Ingrese valores numéricos válidos para la base y el exponente.');
+        alert('Ingrese valores numéricos válidos para los tres números.');
         return;
     }
     var potencia = Math.pow(base, exp);
-    resultDiv.textContent = "El resultado de elevar ".concat(base, " a la potencia ").concat(exp, " es: ").concat(potencia);
+    document.getElementById('resultado').innerHTML =
+        "El resultado de elevar ".concat(base, " a la potencia ").concat(exp, " es: ").concat(potencia);
 }

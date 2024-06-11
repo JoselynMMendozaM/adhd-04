@@ -1,17 +1,16 @@
-function determinarParidad() {
-  const num: number = parseFloat((document.getElementById('txt_num') as HTMLInputElement).value);
-  const resultDiv = document.getElementById('txt_result') as HTMLDivElement;
+function determinarParidad(): void{
+  const numero1: number = parseFloat(
+      (document.getElementById('txtNumero1') as HTMLInputElement).value);
+ 
 
-  
-    if (isNaN(num)) {
-      alert('Ingrese un valor numérico válido.');
-      return;
+    if (isNaN(numero1)) {
+        alert('Ingrese un valor numérico válido.');
+        return;
     }
-  
-    const esPar: boolean = num % 2 === 0;
-    const resultado: string = esPar ? 'El número es par' : 'El número es impar';
-    resultDiv.textContent = `Resultado: ${resultado}`;
 
-    
-}
+  const esPar: boolean = numero1 % 2 === 0;
+  const result: string = esPar ? 'El número es par' : 'El número es impar';
   
+  document.getElementById('resultado').innerHTML =
+   result; 
+} 

@@ -13,6 +13,13 @@ body{
     background-attachment: fixed;
     background-size: cover;
 }
+
+#fondo-inicio{
+background-image: url(../img/pxfuel\ \(2\).jpg);
+background-attachment: fixed;
+background-size: cover;
+}
+
 .bg-green{
     background-color: #081e08;
 }
